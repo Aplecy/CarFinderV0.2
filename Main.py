@@ -28,6 +28,7 @@ def menu():
     if option == 1:
         Input1()
     elif option == 2:
+        print("********************************")
         input("Please Enter the full Vehicle name: ")
     elif option == 3:
         Input2()    
