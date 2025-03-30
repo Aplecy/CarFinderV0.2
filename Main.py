@@ -13,6 +13,15 @@ def Input2():
     print("Thank you for using the AutoCountry Vehicle Finder, good-bye!")
 
 #create a search option for authorized vehicles
+def Search():
+    print("********************************")
+    SEARCHvech = input("Please Enter the full Vehicle name: ")
+    if SEARCHvech in AllowedVehiclesList:
+        print(f"{SEARCHvech} is an authorized vehicle")
+        menu()
+    else:
+        print(f"{SEARCHvech} is not an authorized vehicle, if you received this error please check the spelling and try again.")
+        menu()
 
 #create a defined menu for AutoCountry with options to show authorized vehicles and option to exit
 def menu():
@@ -28,8 +37,7 @@ def menu():
     if option == 1:
         Input1()
     elif option == 2:
-        print("********************************")
-        input("Please Enter the full Vehicle name: ")
+        Search()
     elif option == 3:
         Input2()    
 
