@@ -22,7 +22,8 @@ def menu():
     print("Please Enter the following number below from the following menu:")
     print("")
     print("1. PRINT all Authorized Vehicles")
-    print("2. Exit")
+    print("2. SEARCH for Authorized Vehicles")
+    print("3. Exit")
     option = int(input(""))
     if option == 1:
         Input1()
